@@ -7,7 +7,12 @@ packaged for Kodi.
 
 ### From repository
 
-Download [https://rimeno.github.io/repository.rafaneto-0.0.1.zip](https://rimeno.github.io/repository.rafaneto-0.0.1.zip) and install it from zip.
+Auto installed as a dependency
+from [repository.rafaneto-0.0.2.zip](https://rimeno.github.io/repository.rafaneto-0.0.2.zip)
+for :
+* [service.snapcast.client](https://github.com/rimeno/service.snapcast.client)
+* [script.snapcast.client](https://github.com/rimeno/script.snapcast.client)
+
 
 ### Build
 

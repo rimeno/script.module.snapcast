@@ -1,11 +1,8 @@
 #!/usr/bin/env sh
-
-# exit on error (set -e)
 set -o errexit
 
 readonly PROGNAME=$(basename "$0")
 readonly PROGDIR=$(readlink -m "$(dirname "$0")")
-readonly ARGS="$@"
 
 URL=https://github.com/happyleavesaoc/python-snapcast
 NAME=script.module.snapcast
