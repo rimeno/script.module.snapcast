@@ -10,8 +10,7 @@ packaged for Kodi.
 Auto installed as a dependency
 from [repository.rafaneto-0.0.2.zip](https://rimeno.github.io/repository.rafaneto-0.0.2.zip)
 for :
-* [service.snapcast.client](https://github.com/rimeno/service.snapcast.client)
-* [script.snapcast.client](https://github.com/rimeno/script.snapcast.client)
+* [script.service.snapcast-client](https://github.com/rimeno/script.service.snapcast-client)
 
 
 ### Build
