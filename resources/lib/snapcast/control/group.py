@@ -31,6 +31,14 @@ class Snapgroup(object):
         """Get group name."""
         return self._group.get('name')
 
+    @asyncio.coroutine
+    def set_name(self, name):
+        """Set a group name."""
+        if not name:
+            name = ''
+        self._group['name'] = name
+        yield from self._server.group_name(self.identifier, name)
+
     @property
     def stream(self):
         """Get stream identifier."""
@@ -145,6 +153,12 @@ class Snapgroup(object):
         self._group['muted'] = data['mute']
         self.callback()
         _LOGGER.info('updated mute on %s', self.friendly_name)
+
+    def update_name(self, data):
+        """Update name."""
+        self._group['name'] = data['name']
+        _LOGGER.info('updated name on %s', self.name)
+        self.callback()
 
     def update_stream(self, data):
         """Update stream."""
