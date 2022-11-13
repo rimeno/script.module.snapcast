@@ -16,7 +16,7 @@ VFILE=$(mktemp)
 update_addon(){
     echo "# Update libs"
     BUILD=$(mktemp -d --tmpdir ${NAME}.XXX)
-    DEST=${PROGDIR}/lib
+    DEST=${PROGDIR}/resources/lib
     test -d $DEST && rm -rf $DEST
     mkdir $DEST
 
