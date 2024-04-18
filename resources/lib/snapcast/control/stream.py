@@ -46,6 +46,11 @@ class Snapstream():
         """Get properties."""
         return self._stream.get('properties')
 
+    @property
+    def path(self):
+        """Get stream path."""
+        return self._stream.get('uri').get('path')
+
     def update(self, data):
         """Update stream."""
         self._stream = data
@@ -65,7 +70,7 @@ class Snapstream():
         self._stream['properties'] = data
 
     def __repr__(self):
-        """String representation."""
+        """Return string representation."""
         return f'Snapstream ({self.name})'
 
     def callback(self):
